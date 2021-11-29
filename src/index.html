@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="scss/app.scss" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<h1>Få <span>gratis adgang</span> til Bilmagasinet!</h1>
+
+		<div class="alert alert--warning">
+			<strong>Obs</strong> Vi har fået nyt it-system. Derfor skal du oprette dig igen, hvis du har oprettet dig før november 2021. Vi beklager ulejligheden.
+		</div>
+		<p class="mb-0"><strong>Indtast dine oplysninger</strong></p>
+
+		<form action="" class="form" id="form" >
+			<div class="form__row" data-error-msg="Feltet må ikke være tomt">
+				<div class="form__control">
+					<label for="" class="form__label">Fornavn</label>
+					<img src="./images/alert-circle.svg" alt="" class="form__icon form__icon--error">
+					<img src="./images/check-circle.svg" alt="" class="form__icon form__icon--success">
+					<input type="text" class="form__input form__input--fancylabel" id="firstName" required>
+				</div>
+				<small class="form__error"></small>
+			</div>
+			<div class="form__row" data-error-msg="Feltet må ikke være tomt">
+				<div class="form__control">
+					<label for="" class="form__label">Efternavn</label>
+					<img src="./images/alert-circle.svg" alt="" class="form__icon form__icon--error">
+					<img src="./images/check-circle.svg" alt="" class="form__icon form__icon--success">
+					<input type="text" class="form__input form__input--fancylabel" id="lastName" required>
+				</div>
+				<small class="form__error"></small>
+			</div>
+			<div class="form__row" data-error-msg="Indtast venligst en gyldig email">
+				<div class="form__control">
+					<label for="" class="form__label">Email</label>
+					<img src="./images/alert-circle.svg" alt="" class="form__icon form__icon--error">
+					<img src="./images/check-circle.svg" alt="" class="form__icon form__icon--success">
+					<input type="email" class="form__input form__input--fancylabel" id="email" required>
+				</div>
+				<small class="form__error"></small>
+			</div>
+			<div class="form__row">
+				<button type="submit" class="btn" id="submitBtn" disabled>Næste: Vælg adgangskode</button>
+			</div>
+		</form>
+
+	</div>
+	<script type="module" src="app.js"></script>
+</body>
+</html>

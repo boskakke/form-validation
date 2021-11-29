@@ -1,0 +1,21 @@
+{
+  "name": "image-test",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1",
+    "sharp": "^0.29.1"
+  },
+  "dependencies": {
+    "validator": "^13.7.0"
+  }
+}
